@@ -1,20 +1,24 @@
 import React from 'react';
 import slid_1 from './assets/images/slider/slid_1.jpg';
 import slid_2 from './assets/images/slider/slid_2.jpg';
-import pack1 from './assets/images/packages/pack1.jpg';
-import pack2 from './assets/images/packages/pack2.jpg';
-import pack3 from './assets/images/packages/pack3.jpg';
-import pack4 from './assets/images/packages/pack4.jpg';
-import pack5 from './assets/images/packages/pack5.jpg';
-import pack6 from './assets/images/packages/pack6.jpg';
-import blog1 from './assets/images/blog/blog1.jpg';
-import blog2 from './assets/images/blog/blog2.jpg';
-import blog3 from './assets/images/blog/blog3.jpg';
-import blog4 from './assets/images/blog/blog4.jpg';
-import d1 from './assets/images/destination/d1.jpg';
-import d2 from './assets/images/destination/d2.jpg';
-import d3 from './assets/images/destination/d3.jpg';
-import d4 from './assets/images/destination/d4.jpg';
+import pack1 from './assets/images/packages/Goa.svg';
+import pack2 from './assets/images/packages/Himachal.svg';
+import pack3 from './assets/images/packages/Jammu-kashmir.svg';
+import pack4 from './assets/images/packages/kerala.svg';
+import pack5 from './assets/images/packages/Ladakh.svg';
+import pack6 from './assets/images/packages/Rajasthan.svg';
+import blog1 from './assets/images/blog/kashmir.svg';
+import blog2 from './assets/images/blog/kerala.svg';
+import blog3 from './assets/images/blog/goa.svg';
+import blog4 from './assets/images/blog/rajasthan.svg';
+import d1 from './assets/images/destination/goa.svg';
+import d2 from './assets/images/destination/amritsar.svg';
+import d3 from './assets/images/destination/jaipur.svg';
+import d4 from './assets/images/destination/kerala.svg';
+import d5 from './assets/images/destination/mumbai.svg';
+import d6 from './assets/images/destination/mysore.svg';
+import d7 from './assets/images/destination/varanasi.svg';
+import d8 from './assets/images/destination/humpi.svg';
 
 export const Home = () => {
     return (
@@ -118,10 +122,10 @@ export const Home = () => {
                             <div class="pac-col">
                                 <img src={pack1} alt="" />
                                 <div class="packdetail">
-                                    <h4>Tokyo - 4 Days in Korea, Entertica</h4>
+                                    <h4>Relaxing Goa Holiday</h4>
                                     <div class="daydet">
-                                        <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
-                                        <b>$1450</b>
+                                        <span><i class="far fa-clock"></i> 6 Days 5 Nights</span>
+                                        <b>₹38000</b>
                                     </div>
                                     <div class="eview-row row no-margin">
                                         <ul>
@@ -139,10 +143,10 @@ export const Home = () => {
                             <div class="pac-col">
                                 <img src={pack2} alt="" />
                                 <div class="packdetail">
-                                    <h4>Tokyo - 4 Days in Korea, Entertica</h4>
+                                    <h4>Escape to the Himalayas: Himachal Awaits</h4>
                                     <div class="daydet">
                                         <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
-                                        <b>$1450</b>
+                                        <b>₹25000</b>
                                     </div>
                                     <div class="eview-row row no-margin">
                                         <ul>
@@ -160,10 +164,10 @@ export const Home = () => {
                             <div class="pac-col">
                                 <img src={pack3} alt="" />
                                 <div class="packdetail">
-                                    <h4>Tokyo - 4 Days in Korea, Entertica</h4>
+                                    <h4>Jammu & Kashmir: India's Crown Jewel</h4>
                                     <div class="daydet">
                                         <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
-                                        <b>$1450</b>
+                                        <b>₹45000</b>
                                     </div>
                                     <div class="eview-row row no-margin">
                                         <ul>
@@ -181,10 +185,10 @@ export const Home = () => {
                             <div class="pac-col">
                                 <img src={pack4} alt="" />
                                 <div class="packdetail">
-                                    <h4>Tokyo - 4 Days in Korea, Entertica</h4>
+                                    <h4>Kerala - Discover Kerala, Discover Bliss</h4>
                                     <div class="daydet">
                                         <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
-                                        <b>$1450</b>
+                                        <b>₹39000</b>
                                     </div>
                                     <div class="eview-row row no-margin">
                                         <ul>
@@ -202,10 +206,10 @@ export const Home = () => {
                             <div class="pac-col">
                                 <img src={pack5} alt="" />
                                 <div class="packdetail">
-                                    <h4>Tokyo - 4 Days in Korea, Entertica</h4>
+                                    <h4>Immerse Yourself in Ladakh's Magic</h4>
                                     <div class="daydet">
                                         <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
-                                        <b>$1450</b>
+                                        <b>₹59000</b>
                                     </div>
                                     <div class="eview-row row no-margin">
                                         <ul>
@@ -223,10 +227,10 @@ export const Home = () => {
                             <div class="pac-col">
                                 <img src={pack6} alt="" />
                                 <div class="packdetail">
-                                    <h4>Tokyo - 4 Days in Korea, Entertica</h4>
+                                    <h4>Discover Rajasthan's Rich Heritage</h4>
                                     <div class="daydet">
                                         <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
-                                        <b>$1450</b>
+                                        <b>₹29000</b>
                                     </div>
                                     <div class="eview-row row no-margin">
                                         <ul>
@@ -251,8 +255,8 @@ export const Home = () => {
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 natur-col mx-auto">
-                                <h2>Up to 40% Discount on Selected Packages</h2>
-                                <h4 class="pt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form  If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</h4>
+                                <h2>Up to 30% Discount on Selected Packages</h2>
+                                <h4 class="pt-3">Adventure awaits! Whether you're booking flights, finding the perfect accommodation, or planning a custom itinerary, we've got you covered. Enjoy peace of mind with comprehensive travel insurance and 24/7 support. Let us handle the details so you can focus on exploring new destinations and creating unforgettable memories. Ready to embark on your next journey? Let's make it happen!</h4>
                                 <button class="btn btn-light">Book Now</button>
                             </div>
                         </div>
@@ -276,9 +280,9 @@ export const Home = () => {
                                     <img src={blog1} alt="" />
                                 </div>
                                 <div class="col-sm-7 blog-content-tab">
-                                    <h2>Curabit finibus dui sem.</h2>
+                                    <h2>Kashmir: Mountains, houseboats</h2>
                                     <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>(12)</small></i>  <i class="fas fa-comments"><small>(12)</small></i></p>
-                                    <p class="blog-desic">Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same keyboard shortcut is the </p>
+                                    <p class="blog-desic">Paradise on Earth, snow-capped mountains, serene lakes, houseboats, Mughal gardens, adventure sports, warm hospitality. Kashmir awaits!</p>
                                     <a href="blog_single.html">Read More <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -289,9 +293,9 @@ export const Home = () => {
                                     <img src={blog2} alt="" />
                                 </div>
                                 <div class="col-sm-7 blog-content-tab">
-                                    <h2>Excepteur sint occaecat</h2>
+                                    <h2>Kerala: Backwaters, beaches</h2>
                                     <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>(12)</small></i>  <i class="fas fa-comments"><small>(12)</small></i></p>
-                                    <p class="blog-desic">Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same keyboard shortcut is the </p>
+                                    <p class="blog-desic">Backwaters, beaches, Ayurveda, spice plantations, houseboats, wildlife sanctuaries, lush greenery. Kerala awaits!</p>
                                     <a href="blog_single.html">Read More <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -302,9 +306,9 @@ export const Home = () => {
                                     <img src={blog3} alt="" />
                                 </div>
                                 <div class="col-sm-7 blog-content-tab">
-                                    <h2>Treatmnkl sint occaecat</h2>
+                                    <h2>Goa: Sun, sand, sea, parties</h2>
                                     <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>(12)</small></i>  <i class="fas fa-comments"><small>(12)</small></i></p>
-                                    <p class="blog-desic">Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same keyboard shortcut is the </p>
+                                    <p class="blog-desic">Sun-kissed beaches, vibrant nightlife, Portuguese charm, tropical vibes, water sports, delicious seafood, and endless relaxation. Goa awaits!</p>
                                     <a href="blog_single.html">Read More <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -315,9 +319,9 @@ export const Home = () => {
                                     <img src={blog4} alt="" />
                                 </div>
                                 <div class="col-sm-7 blog-content-tab">
-                                    <h2>Orcidinodal sint occaecat</h2>
+                                    <h2>Rajasthan: Forts, palaces, culture</h2>
                                     <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>(12)</small></i>  <i class="fas fa-comments"><small>(12)</small></i></p>
-                                    <p class="blog-desic">Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same keyboard shortcut is the </p>
+                                    <p class="blog-desic">Royal forts, vibrant culture, Thar desert, camel safaris, majestic palaces, colorful markets, and warm hospitality. Rajasthan awaits!</p>
                                     <a href="blog_single.html">Read More <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -342,7 +346,7 @@ export const Home = () => {
                             <div class="destcol">
                                 <img src={d1} alt="" />
                                 <div class="layycover">
-                                    <h4>Brazil <span class="badge badge-info">5 Places</span></h4>
+                                    <h4>Goa <span class="badge badge-info">5 Places</span></h4>
                                 </div>
                             </div>
                         </div>
@@ -350,7 +354,7 @@ export const Home = () => {
                             <div class="destcol">
                                 <img src={d2} alt="" />
                                 <div class="layycover">
-                                    <h4>Malaysia <span class="badge badge-info">5 Places</span></h4>
+                                    <h4>Punjab <span class="badge badge-info">5 Places</span></h4>
                                 </div>
                             </div>
                         </div>
@@ -359,7 +363,7 @@ export const Home = () => {
                             <div class="destcol">
                                 <img src={d3} alt="" />
                                 <div class="layycover">
-                                    <h4>Sri Lanka <span class="badge badge-info">5 Places</span></h4>
+                                    <h4>Rajasthan <span class="badge badge-info">5 Places</span></h4>
                                 </div>
                             </div>
                         </div>
@@ -368,40 +372,40 @@ export const Home = () => {
                             <div class="destcol">
                                 <img src={d4} alt="" />
                                 <div class="layycover">
-                                    <h4>Canada <span class="badge badge-info">5 Places</span></h4>
+                                    <h4>Kerala <span class="badge badge-info">5 Places</span></h4>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-3 descol">
                             <div class="destcol">
-                                <img src={d3} alt="" />
+                                <img src={d5} alt="" />
                                 <div class="layycover">
-                                    <h4>Vietnam <span class="badge badge-info">5 Places</span></h4>
+                                    <h4>Maharashtra <span class="badge badge-info">5 Places</span></h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 descol">
                             <div class="destcol">
-                                <img src={d1} alt="" />
+                                <img src={d6} alt="" />
                                 <div class="layycover">
-                                    <h4>Thailand <span class="badge badge-info">5 Places</span></h4>
+                                    <h4>Karnataka <span class="badge badge-info">5 Places</span></h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 descol">
                             <div class="destcol">
-                                <img src={d3} alt="" />
+                                <img src={d7} alt="" />
                                 <div class="layycover">
-                                    <h4>Thailand <span class="badge badge-info">5 Places</span></h4>
+                                    <h4>Uttar Pradesh <span class="badge badge-info">5 Places</span></h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 descol">
                             <div class="destcol">
-                                <img src={d4} alt="" />
+                                <img src={d8} alt="" />
                                 <div class="layycover">
-                                    <h4>Thailand <span class="badge badge-info">5 Places</span></h4>
+                                    <h4>Andhra Pradesh <span class="badge badge-info">5 Places</span></h4>
                                 </div>
                             </div>
                         </div>
