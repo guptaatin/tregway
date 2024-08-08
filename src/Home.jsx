@@ -1,6 +1,7 @@
 import React from 'react';
-import slid_1 from './assets/images/slider/slid_1.jpg';
-import slid_2 from './assets/images/slider/slid_2.jpg';
+import slid_1 from './assets/images/slider/1.png';
+import slid_2 from './assets/images/slider/2.png';
+import slid_3 from './assets/images/slider/3.png';
 import pack1 from './assets/images/packages/Goa.svg';
 import pack2 from './assets/images/packages/Himachal.svg';
 import pack3 from './assets/images/packages/Jammu-kashmir.svg';
@@ -19,13 +20,50 @@ import d5 from './assets/images/destination/mumbai.svg';
 import d6 from './assets/images/destination/mysore.svg';
 import d7 from './assets/images/destination/varanasi.svg';
 import d8 from './assets/images/destination/humpi.svg';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 export const Home = () => {
+    const settings = {
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    };
+
+    const slidesData = [
+        {
+            image: slid_3,
+            // heading: "Tailored Journeys, Seamless Travel Planning",
+            // subheading: "A travel agency offers personalized vacation planning, booking services, and tailored itineraries. It handles flights, accommodations, tours, and activities, ensuring seamless and memorable travel experiences for clients worldwide.",
+            // buttonLabel: "Book Online",
+            // buttonLink: "#shop",
+        },
+        {
+            image: slid_2,
+            // heading: "Exclusive Offers",
+            // subheading: "Don't miss out on our limited-time deals",
+            // buttonLabel: "Book Online",
+            // buttonLink: "#offers",
+        },
+        {
+            image: slid_1,
+            // heading: "Join Our Community",
+            // subheading: "Connect with like-minded individuals",
+            // buttonLabel: "Book Online",
+            // buttonLink: "#community",
+        },
+        // Add more slides as needed
+    ];
     return (
         <div>
             {/* <!--################### Slider Starts Here #######################---> */}
 
-            <div class="slider-detail">
+            {/* <div class="slider-detail">
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -50,7 +88,22 @@ export const Home = () => {
                         </div>
 
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src={slid_2} alt="Third slide" />
+                            <img class="d-block w-100" src={slid_2} alt="Second slide" />
+                            <div class="carousel-caption vdg-cur d-none d-md-block">
+                                <h5 class="animated bounceInDown">Best Free Educational Template</h5>
+                                <p class="animated bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, <br />
+                                    aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis <br />
+                                    sed sagittis at, sagittis quis neque. Praesent.</p>
+
+                                <div class="row vbh">
+
+                                    <div class="btn btn-primary animated bounceInUp"> Apply Online </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src={slid_3} alt="Third slide" />
                             <div class="carousel-caption vdg-cur d-none d-md-block">
                                 <h5 class="animated bounceInDown">Best Free Educational Template</h5>
                                 <p class="animated bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, <br />
@@ -76,6 +129,23 @@ export const Home = () => {
                 </div>
 
 
+            </div> */}
+
+            <div className="carousel-container">
+                <Slider {...settings}>
+                    {slidesData.map((slide, index) => (
+                        <div key={index} className="slide-content">
+                            <img src={slide.image} alt={`Slide ${index + 1}`} />
+                            {/* <div className="text-overlay">
+                                <h2>{slide.heading}</h2>
+                                <p>{slide.subheading}</p>
+                                <a href={slide.buttonLink} className="slide-button">
+                                    {slide.buttonLabel}
+                                </a>
+                            </div> */}
+                        </div>
+                    ))}
+                </Slider>
             </div>
 
             {/* <!--################### Slider Starts Here #######################---> */}
@@ -115,7 +185,7 @@ export const Home = () => {
                 <div class="container">
                     <div class="session-title row">
                         <h2>Top Packages</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available form</p>
+                        <p>Discover world-famous tours, featuring iconic landmarks, cultural gems, and unforgettable experiences.</p>
                     </div>
                     <div class="pack-row row">
                         <div class="col-md-4">
@@ -126,6 +196,48 @@ export const Home = () => {
                                     <div class="daydet">
                                         <span><i class="far fa-clock"></i> 6 Days 5 Nights</span>
                                         <b>₹38000</b>
+                                    </div>
+                                    <div class="eview-row row no-margin">
+                                        <ul>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="pac-col">
+                                <img src={pack5} alt="" />
+                                <div class="packdetail">
+                                    <h4>Immerse Yourself in Ladakh's Magic</h4>
+                                    <div class="daydet">
+                                        <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
+                                        <b>₹59000</b>
+                                    </div>
+                                    <div class="eview-row row no-margin">
+                                        <ul>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="pac-col">
+                                <img src={pack6} alt="" />
+                                <div class="packdetail">
+                                    <h4>Discover Rajasthan's Rich Heritage</h4>
+                                    <div class="daydet">
+                                        <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
+                                        <b>₹29000</b>
                                     </div>
                                     <div class="eview-row row no-margin">
                                         <ul>
@@ -202,48 +314,6 @@ export const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="pac-col">
-                                <img src={pack5} alt="" />
-                                <div class="packdetail">
-                                    <h4>Immerse Yourself in Ladakh's Magic</h4>
-                                    <div class="daydet">
-                                        <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
-                                        <b>₹59000</b>
-                                    </div>
-                                    <div class="eview-row row no-margin">
-                                        <ul>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="pac-col">
-                                <img src={pack6} alt="" />
-                                <div class="packdetail">
-                                    <h4>Discover Rajasthan's Rich Heritage</h4>
-                                    <div class="daydet">
-                                        <span><i class="far fa-clock"></i> 4 Days 3 Nights</span>
-                                        <b>₹29000</b>
-                                    </div>
-                                    <div class="eview-row row no-margin">
-                                        <ul>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -271,7 +341,7 @@ export const Home = () => {
                 <div class="container">
                     <div class="row session-title">
                         <h2>Our Blog</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Inspiring journeys, tips, and guides for global explorers.</p>
                     </div>
                     <div class="row blog-row">
                         <div class="col-md-6 col-sm-12">
@@ -338,8 +408,8 @@ export const Home = () => {
             <div class="travel-destination container-fluid">
                 <div class="container">
                     <div class="session-title">
-                        <h2>Popular Destination</h2>
-                        <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+                        <h2>Popular Tours</h2>
+                        <p>Explore top tours: from iconic landmarks and vibrant cities to hidden gems and cultural experiences, offering unforgettable adventures worldwide.</p>
                     </div>
                     <div class="destination-row row">
                         <div class="col-md-3 descol">

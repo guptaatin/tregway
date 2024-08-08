@@ -1,9 +1,9 @@
 import React from 'react';
-import about from './assets/images/about.jpg';
-import member1 from './assets/images/team/team-memb1.jpg';
-import member2 from './assets/images/team/team-memb2.jpg';
-import member3 from './assets/images/team/team-memb3.jpg';
-import member4 from './assets/images/team/team-memb4.jpg';
+import about from './assets/images/about.png';
+import member1 from './assets/images/team/accomadation.png';
+import member2 from './assets/images/team/booking.png';
+import member3 from './assets/images/team/tours-packages.png';
+import member4 from './assets/images/team/travel-isurance.png';
 
 export const AboutUs = () => {
     return (
@@ -12,7 +12,7 @@ export const AboutUs = () => {
             <div class="page-nav no-margin row">
                 <div class="container">
                     <div class="row">
-                        <h2>About Tour & Travel</h2>
+                        <h2>About Tregway</h2>
                         <ul>
                             <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
                             <li><i class="fas fa-angle-double-right"></i> About Us</li>
@@ -28,23 +28,12 @@ export const AboutUs = () => {
                 <div class="container">
                     <div class="row natur-row no-margin w-100">
                         <div class="text-part col-md-6">
-                            <h2>About Travel Packages</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius faucibus
-                                ligula non congue. Suspendisse at pretium massa, sit amet
-                                vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl </p>
-                            <p> Cras faucibus laoreet nibh, sit amet tincidunt leo mollis in. Etiam eu mauris metus.
-                                Nulla facilisi. Etiam vestibulum,
-                                nisi et convallis elementum, leo orci aliquam metus, id posuere massa neque vitae
-                                arcu.</p>
+                            <h2>About Us</h2>
+                            <p>Welcome to Tregway, where your dream vacations come to life! Our curated travel packages offer unique, memorable experiences in breathtaking destinations. Whether you seek adventure, relaxation, cultural immersion, or a bit of everything, Tregway has the perfect itinerary for you</p>
 
-                            <p>Integer vulputate vehicula dolor a eleifend. Duis aliquam condimentum sapien,
-                                eget tempor justo. Aenean porttitor nibh metus, sollicitudin egestas metus posuere et
-                                . Fusce egestas volutpat metus, in sodales sem bibendum porta. Nunc hendrerit nunc sit
-                                amet tellus posuere, at malesuada sem gravida. Integer maximus ultricies augue, at
-                                dapibus elit bibendum consequat. Cras faucibus tellus eleifend, fermentum purus in,
-                                dapibus sapien. Praesent nec ornare risus. Etiam iaculis, ligula vel gravida
-                                vestibulum, urna justo posuere ante,
-                                id pretium massa arcu sed mi. Nunc a sollicitudin sem. Duis tempus </p>
+                            <p>Why Choose Tregway? Expert Itineraries: Handpicked destinations and activities ensure a seamless travel experience. Exclusive Experiences: Gain access to unique sites, guided tours, and local insights. Flexible Package :</p>
+
+                            <p>Customize your travel plans, whether solo, with family, or in a group. Exceptional Support: Our dedicated team assists you from planning to return. Our Packages - Adventure Awaits: Thrilling adventures in exotic locales. Cultural Immersion: Deep cultural dives with guided tours and culinary experiences. Luxury Escapes: Five-star accommodations and gourmet dining. Family Fun: Packages designed for all ages. Romantic Getaways: Serene escapes for couples.</p>
                         </div>
                         <div class="image-part col-md-6">
                             <img src={about} alt="" />
@@ -58,15 +47,15 @@ export const AboutUs = () => {
             <section class="our-team">
                 <div class="container">
                     <div class="session-title row">
-                        <h2>Our Team</h2>
+                        <h2>Our Services</h2>
                     </div>
                     <div class="row team-row">
                         <div class="col-md-3 col-sm-6">
                             <div class="single-usr">
                                 <img src={member1} alt="" />
                                 <div class="det-o">
-                                    <h4>David Kanuel</h4>
-                                    <i>Facial Surgan</i>
+                                    <h4>Accomadation</h4>
+                                    <i>Hotel/stays</i>
                                 </div>
                             </div>
                         </div>
@@ -74,8 +63,8 @@ export const AboutUs = () => {
                             <div class="single-usr">
                                 <img src={member2} alt="" />
                                 <div class="det-o">
-                                    <h4>David Kanuel</h4>
-                                    <i>Facial Surgan</i>
+                                    <h4>Bookings</h4>
+                                    <i>Flights/Trains</i>
                                 </div>
                             </div>
                         </div>
@@ -83,8 +72,8 @@ export const AboutUs = () => {
                             <div class="single-usr">
                                 <img src={member3} alt="" />
                                 <div class="det-o">
-                                    <h4>David Kanuel</h4>
-                                    <i>Facial Surgan</i>
+                                    <h4>Tours packages</h4>
+                                    <i>Domestic/International</i>
                                 </div>
                             </div>
                         </div>
@@ -92,8 +81,8 @@ export const AboutUs = () => {
                             <div class="single-usr">
                                 <img src={member4} alt="" />
                                 <div class="det-o">
-                                    <h4>David Kanuel</h4>
-                                    <i>Facial Surgan</i>
+                                    <h4>Travel Support</h4>
+                                    <i>Visa/Insurance</i>
                                 </div>
                             </div>
                         </div>

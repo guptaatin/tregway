@@ -403,6 +403,10 @@ header .header-top .social-login li {
   padding: 0px 10px;
 }
 
+header .header-top .social-login a {
+  color: #FFF;
+}
+
 header .header-bottom .logo {
   padding-top: 11px;
 }

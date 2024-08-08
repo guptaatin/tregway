@@ -9,18 +9,18 @@ export const Footer = () => {
                 <div class="container">
                     <div class="footer-top row">
                         <div class="col-md-4 foot-logo">
-                            <h2>Travel Packages</h2>
+                            <h2>Tregway</h2>
                         </div>
                         <div class="col-md-8 foot-addr">
-                            <p>Donec venenatis metus at diam condimentum pretiuteger aliquet a turpis quis pel len tesque ueta turpis quis venenatissolelementum</p>
+                            <p>Embark on your next adventure with us. Unforgettable experiences and lifelong memories await—book your dream journey today!</p>
                             <ul>
-                                <li class="pl-0"><i class="fas fa-map-marker-alt"></i> Antonya Street, 23/H-2, Building, TA, AUS </li>
-                                <li><i class="fas fa-mobile-alt"></i> +177 (089) 987665  </li>
-                                <li><i class="far fa-envelope"></i> support@smarteyeapps.com </li>
+                                <li class="pl-0"><i class="fas fa-map-marker-alt"></i> Mumbai, Maharastra </li>
+                                <li><i class="fas fa-mobile-alt"></i> +919910792129  </li>
+                                <li><i class="far fa-envelope"></i> connect@tregway.com </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="foot-botom row">
+                    {/* <div class="foot-botom row">
                         <div class="col-md-3">
                             <div class="fotter-coo">
                                 <h5>IMPORTANT LINKS</h5>
@@ -73,7 +73,7 @@ export const Footer = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </footer>
         </div>
